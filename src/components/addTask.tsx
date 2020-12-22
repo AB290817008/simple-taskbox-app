@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTask } from "../lib/redux";
+import "../App.css"
 
 const AddTask = () => {
   const dispatch = useDispatch();
@@ -36,8 +37,9 @@ const AddTask = () => {
             />
             {error && <p className="text-red-700 -my-1 text-sm">{error}</p>}
             <button
-              className="py-1 px-4 focus:outline-none bg-pink-600 text-white rounded my-3"
+              className="py-1 px-4 focus:outline-none bg-purple-600 text-white rounded my-3"
               onClick={handleSubmit}
+              
             >
               Submit
             </button>

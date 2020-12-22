@@ -8,6 +8,7 @@ import { store } from "./lib/redux";
 function App() {
   return (
     <div className="App">
+      <h1 className="sTaskbox">Simple Taskbox</h1>
       <Provider store={store}>
         <InboxScreen />
       </Provider>
